@@ -31,7 +31,7 @@ def until(read, seconds=60):
 
 def run(serial):
     adb = ["adb", "-s", serial]
-    package = "com.wangzan101.mika"
+    package = "com.staract.assistant"
 
     def shell(*args, check=True):
         return subprocess.run(adb + ["shell", *args], check=check, capture_output=True, text=True, timeout=12)
@@ -57,7 +57,7 @@ def run(serial):
 
     with tempfile.TemporaryDirectory() as tmp, tempfile.TemporaryFile(mode="w+") as log:
         test = subprocess.Popen(adb + ["shell", "am", "instrument", "-w", "-e", "class",
-            package + ".task.RemoteTaskRecoveryDeviceTest#concurrentRetriesStartOnlyOneTurn",
+            "com.wangzan101.mika.task.RemoteTaskRecoveryDeviceTest#concurrentRetriesStartOnlyOneTurn",
             "-e", "recoveryDriver", key, "-e", "interruptId", interrupted,
             package + ".test/androidx.test.runner.AndroidJUnitRunner"], stdout=log, stderr=subprocess.STDOUT)
         try:
@@ -118,7 +118,7 @@ def run(serial):
             shell("am", "force-stop", package)
             test.wait(timeout=20)
             assert not shell("pidof", package, check=False).stdout.strip()
-            shell("am", "start", "-W", "-n", package + "/.ui.MainActivity")
+            shell("am", "start", "-W", "-n", package + "/com.wangzan101.mika.ui.MainActivity")
 
             def listener_back():
                 p = subprocess.run(cli + target + ["doctor"], capture_output=True, timeout=18)

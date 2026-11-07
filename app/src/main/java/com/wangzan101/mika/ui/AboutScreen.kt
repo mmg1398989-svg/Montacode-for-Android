@@ -36,6 +36,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.testTag
@@ -149,6 +150,7 @@ fun AboutScreen(
                     .testTag("about-license"),
                 style = MikaType.Hint, color = c.ink3, textAlign = TextAlign.Center,
             )
+            Text(stringResource(R.string.about_developer), style = MikaType.Caption, color = c.ink2)
             Text(AboutCopy.AUTHOR, Modifier.padding(top = 2.dp), style = MikaType.Hint, color = c.ink3)
         }
     }
@@ -177,10 +179,10 @@ private fun Hero(versionName: String, build: String, beta: Boolean) {
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Image(
-            painterResource(R.drawable.mika_launcher_art), contentDescription = null,
-            Modifier.size(72.dp).clip(RoundedCornerShape(20.dp)),
+            painterResource(R.drawable.staract_logo), contentDescription = null,
+            Modifier.size(160.dp, 96.dp).clip(RoundedCornerShape(16.dp)).background(Color.White),
         )
-        Text("Mika", Modifier.padding(top = 12.dp), style = MikaType.Title, fontWeight = FontWeight.Bold, color = c.ink)
+        Text(stringResource(R.string.app_name), Modifier.padding(top = 12.dp), style = MikaType.Title, fontWeight = FontWeight.Bold, color = c.ink)
         Text(AboutCopy.TAGLINE, Modifier.padding(top = 4.dp), style = MikaType.Caption, color = c.ink2, textAlign = TextAlign.Center)
         Row(Modifier.padding(top = 10.dp).testTag("about-version"), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(6.dp)) {
             Text(AboutCopy.version(versionName), style = MikaType.Hint, color = c.ink3)

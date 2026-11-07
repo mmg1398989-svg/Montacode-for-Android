@@ -2,6 +2,7 @@ package com.wangzan101.mika.ui
 
 import com.wangzan101.mika.i18n.tr
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -19,6 +20,7 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
@@ -50,8 +52,8 @@ fun WelcomeScreen(onStart: () -> Unit) {
             Column(Modifier.weight(1f).verticalScroll(rememberScrollState()).padding(horizontal = 16.dp)) {
                 Column(Modifier.fillMaxWidth().padding(top = 40.dp, start = 8.dp, end = 8.dp, bottom = 8.dp), horizontalAlignment = Alignment.CenterHorizontally) {
                     Image(
-                        painterResource(R.drawable.mika_launcher_art), null,
-                        Modifier.size(76.dp).shadow(14.dp, LogoShape, clip = false).clip(LogoShape),
+                        painterResource(R.drawable.staract_logo), null,
+                        Modifier.size(76.dp).shadow(14.dp, LogoShape, clip = false).clip(LogoShape).background(Color.White),
                         contentScale = ContentScale.Crop,
                     )
                     Text(WelcomeCopy.TITLE, Modifier.padding(top = 20.dp), style = MikaType.LargeTitle, fontSize = 26.sp, color = c.ink, textAlign = TextAlign.Center)

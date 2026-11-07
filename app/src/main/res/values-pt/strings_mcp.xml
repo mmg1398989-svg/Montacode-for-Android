@@ -37,7 +37,7 @@
     <string name="mcp_cli_install">1. Preparar o computador</string>
     <string name="mcp_cli_install_sub">Envie o guia de instalação para a IA do seu computador ou siga-o você mesmo no computador.</string>
     <string name="mcp_copy_install">Copiar guia de instalação</string>
-    <string name="mcp_cli_install_prompt">Siga https://github.com/wangzan101/Mika/blob/main/docs/agent-quickstart.en.md para instalar a CLI do Mika ou a Skill para este agente. Use o método de conexão escolhido no celular: USB usa o ADB autorizado; Wi-Fi/VPN privada usa o endereço HTTP e um arquivo de token privado. Execute connect para verificar a conexão. Com apenas a Skill, use o script incluído nela. Não envie tarefas ao celular nem exiba tokens na conversa.</string>
+    <string name="mcp_cli_install_prompt">Siga https://github.com/wangzan101/Mika/blob/main/docs/agent-quickstart.en.md para instalar a CLI do STARACT ou a Skill para este agente. Use o método de conexão escolhido no celular: USB usa o ADB autorizado; Wi-Fi/VPN privada usa o endereço HTTP e um arquivo de token privado. Execute connect para verificar a conexão. Com apenas a Skill, use o script incluído nela. Não envie tarefas ao celular nem exiba tokens na conversa.</string>
     <string name="mcp_cli_connect">2. Conectar o celular</string>
     <string name="mcp_cli_connect_sub">Execute no computador por USB ou por depuração sem fio pareada. connect verifica a conexão. Com apenas a Skill, peça ao agente para executar o cliente incluído nela.</string>
     <string name="mcp_copy_command">Copiar comando</string>

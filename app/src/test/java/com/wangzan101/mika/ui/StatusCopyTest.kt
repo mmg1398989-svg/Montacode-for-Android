@@ -29,7 +29,7 @@ class StatusCopyTest {
 
     @Test
     fun unavailableAccessibilityDistinguishesEnabledFromOff() {
-        assertEquals("Mika 的无障碍服务没有开启:请在系统设置的无障碍里打开 Mika。", StatusCopy.accessibilityUnavailable(enabled = false))
+        assertEquals("STARACT 的无障碍服务没有开启:请在系统设置的无障碍里打开 STARACT。", StatusCopy.accessibilityUnavailable(enabled = false))
         val enabled = StatusCopy.accessibilityUnavailable(enabled = true)
         assertTrue(enabled.contains("已开启"))
         assertTrue(enabled.contains("关闭后重新开启"))
