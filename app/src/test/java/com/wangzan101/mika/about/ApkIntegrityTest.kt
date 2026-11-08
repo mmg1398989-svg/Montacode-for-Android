@@ -10,7 +10,7 @@ class ApkIntegrityTest {
     @get:Rule val temp = TemporaryFolder()
 
     @Test fun acceptsOfficialApk() {
-        ApkIntegrity.requireOfficialUrl("https://github.com/wangzan101/Mika/releases/download/v0.2.0/Mika.apk")
+        ApkIntegrity.requireOfficialUrl("https://github.com/mmg1398989-svg/STARACT/releases/download/v0.2.0/STARACT.apk")
     }
 
     @Test fun rejectsUntrustedDownloads() {
