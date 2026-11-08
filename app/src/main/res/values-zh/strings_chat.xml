@@ -7,7 +7,7 @@
     <string name="chat_greeting_night">夜深了</string>
     <string name="chat_empty_prompt">想让 STARACT 做什么？</string>
     <string name="chat_example_follow">帮我打开空调遥控器，把空调调到26度制冷</string>
-    <string name="chat_example_group_summary">帮我总结微信群聊，Mika内测体验群今天都聊了些啥</string>
+    <string name="chat_example_group_summary">帮我总结微信群聊，STARACT 内测体验群今天都聊了些啥</string>
     <string name="chat_example_jobs">在Boss直聘上帮我投递AI产品经理岗位，150个投满</string>
     <string name="chat_example_multi_step">帮我打开汽水音乐，看广告领取24小时听歌VIP会员</string>
     <string name="chat_example_alarms">帮我订明天早上9:40、9:50、10:00 的闹钟</string>

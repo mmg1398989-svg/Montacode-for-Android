@@ -126,8 +126,7 @@ fun AboutScreen(
             ListRow(MikaIcons.Bug, AboutCopy.FEEDBACK, AboutCopy.FEEDBACK_SUB, first = true, onClick = { sheet = AboutSheet.Feedback }) { RowChevron() }
         }
         GroupCard {
-            ListRow(MikaIcons.Code, AboutCopy.REPO, AboutCopy.REPO_SUB, first = true, onClick = { onOpenUrl(MikaLinks.REPO) }) { ExternalMark() }
-            ListRow(MikaIcons.Book, AboutCopy.GUIDE, AboutCopy.GUIDE_SUB, onClick = { onOpenUrl(MikaLinks.README) }) { ExternalMark() }
+            ListRow(MikaIcons.Book, AboutCopy.GUIDE, AboutCopy.GUIDE_SUB, first = true, onClick = { onOpenUrl(MikaLinks.README) }) { ExternalMark() }
         }
 
         Row(
@@ -151,7 +150,6 @@ fun AboutScreen(
                 style = MikaType.Hint, color = c.ink3, textAlign = TextAlign.Center,
             )
             Text(stringResource(R.string.about_developer), style = MikaType.Caption, color = c.ink2)
-            Text(AboutCopy.AUTHOR, Modifier.padding(top = 2.dp), style = MikaType.Hint, color = c.ink3)
         }
     }
 
