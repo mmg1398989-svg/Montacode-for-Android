@@ -10,7 +10,7 @@ class ApkIntegrityTest {
     @get:Rule val temp = TemporaryFolder()
 
     @Test fun acceptsOfficialApk() {
-        ApkIntegrity.requireOfficialUrl("https://github.com/mmg1398989-svg/GN-Agent-for-Android/releases/download/v0.2.0/GN-Agent-for-Android.apk")
+        ApkIntegrity.requireOfficialUrl("https://github.com/mmg1398989-svg/Montacode-for-Android/releases/download/v0.2.0/Montacode-for-Android.apk")
     }
 
     @Test fun rejectsUntrustedDownloads() {
