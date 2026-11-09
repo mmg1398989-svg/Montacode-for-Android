@@ -35,6 +35,7 @@
     <string name="cap_tools">工具呼叫</string>
     <string name="cap_tools_unconfirmed">工具呼叫 · 未確認</string>
     <string name="cap_reasoning">推理</string>
+    <string name="model_need_url">請填寫介面網址</string>
     <string name="model_free_note">GLM-4-Flash 永久免費、不限用量（並發有限制）。手機號註冊拿到 API Key，貼到上面就能用。</string>
     <string name="model_free_signup">去註冊拿免費 API Key</string>
     <string name="model_url_scheme">介面網址要以 http:// 或 https:// 開頭</string>
