@@ -35,7 +35,8 @@
     <string name="cap_tools">Tool calling</string>
     <string name="cap_tools_unconfirmed">Tool calling · unconfirmed</string>
     <string name="cap_reasoning">Reasoning</string>
-    <string name="model_need_url">Enter the base URL</string>
+    <string name="model_free_note">The free model name is filled in for you. Create an API key, paste it above, then test and save.</string>
+    <string name="model_free_signup">Get a free API key</string>
     <string name="model_url_scheme">The base URL must start with http:// or https://</string>
     <string name="model_url_unencrypted">This address isn’t encrypted; your API key and chats could be seen by others on the network.</string>
     <string name="model_probe_failed">Asking %1$s to call a test tool failed: %2$s</string>

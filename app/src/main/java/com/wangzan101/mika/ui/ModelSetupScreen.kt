@@ -417,6 +417,17 @@ private fun AddProviderForm(ui: ModelSetupUi, actions: ModelSetupActions) {
             )
         }
     }
+    // 声明了免费模型的预设:说明 + 去注册拿 Key 的入口
+    if (f.hasFreeModel) {
+        val context = LocalContext.current
+        FooterNote(stringResource(R.string.model_free_note), Modifier.testTag("setup-free-note"))
+        Text(
+            stringResource(R.string.model_free_signup),
+            Modifier.padding(start = 16.dp, bottom = 8.dp).clickable { openInBrowser(context, ModelSetupCopy.FREE_SIGNUP_URL) }
+                .testTag("setup-free-signup").padding(vertical = 4.dp),
+            fontSize = 13.sp, fontWeight = FontWeight.Medium, color = c.accent,
+        )
+    }
     // 列表里没有要的模型、或这家不提供列表时,随时可以自己填(没列出模型时那一栏已经在了)
     if (!f.noList) {
         Text(
@@ -673,6 +684,9 @@ object ModelSetupCopy {
     val SAVE_UNTESTED_TITLE: String get() = tr(R.string.model_save_untested_title)
     val SAVE_UNTESTED_BODY: String get() = tr(R.string.model_save_untested_body)
     val SAVE_UNTESTED_CONFIRM: String get() = tr(R.string.model_save_untested_confirm)
+
+    /** 声明了免费模型的预设(智谱 GLM-4-Flash):去拿免费 Key 的注册入口。 */
+    const val FREE_SIGNUP_URL = "https://open.bigmodel.cn"
 
     /** 手填模型名时举的例子,按接口类型(各家模型名的样子不同)。 */
     fun modelExample(kind: ProviderConfig.Kind): String = tr(

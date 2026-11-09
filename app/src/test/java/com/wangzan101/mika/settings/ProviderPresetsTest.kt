@@ -84,6 +84,22 @@ class ProviderPresetsTest {
         assertNotEquals(standard.baseUrl, coding.baseUrl)
     }
 
+    /** 声明了免费模型的预设(智谱 GLM-4-Flash):表单预填成手填模型,免费提示跟着预设走。 */
+    @Test fun presetWithFreeModelPrefillsManualModel() {
+        val zhipu = preset("智谱")
+        assertEquals("glm-4-flash", zhipu.defaultModel)
+        val f = AddForm.of(zhipu)
+        assertTrue(f.manual)
+        assertEquals("glm-4-flash", f.typedModel)
+        assertTrue(f.showModel)
+        assertTrue(f.hasFreeModel)
+        // 别的预设不受影响:没声明的不预填、不显示提示
+        val deepseek = AddForm.of(preset("DeepSeek"))
+        assertFalse(deepseek.manual)
+        assertEquals("", deepseek.typedModel)
+        assertFalse(deepseek.hasFreeModel)
+    }
+
     /** 托管多家模型的 OpenAI 兼容网关:不给 familyTokens,地址认得出是它。 */
     @Test fun requestyIsAnOpenAiCompatGateway() {
         val requesty = preset("Requesty")

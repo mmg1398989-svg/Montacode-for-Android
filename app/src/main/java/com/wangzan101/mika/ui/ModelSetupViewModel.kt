@@ -180,8 +180,12 @@ data class AddForm(
     /** 这家自己的模型名里的词(见 [ProviderPreset.familyTokens]):选的预设给了的用它,否则按地址对得上的预设。 */
     val familyTokens: List<String> get() = presetFor(preset).familyTokens.ifEmpty { ModelOptions.familyOf(baseUrl) }
 
+    /** 选中的预设声明了免费模型(见 [ProviderPreset.defaultModel]):表单给免费说明和注册入口。 */
+    val hasFreeModel: Boolean get() = presetFor(preset).defaultModel != null
+
     companion object {
-        fun of(p: ProviderPreset) = AddForm(p.label, p.kind, p.baseUrl, "")
+        /** 声明了免费模型的预设:帮用户预填成手填模型(官方声明免费的,见 [ProviderPreset.defaultModel])。 */
+        fun of(p: ProviderPreset) = AddForm(p.label, p.kind, p.baseUrl, "", model = p.defaultModel.orEmpty(), manual = p.defaultModel != null)
         fun presetFor(label: String): ProviderPreset = ProviderPresets.all.firstOrNull { it.label == label } ?: ProviderPresets.custom
     }
 }

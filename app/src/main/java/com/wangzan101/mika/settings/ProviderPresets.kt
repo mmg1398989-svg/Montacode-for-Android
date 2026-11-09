@@ -25,6 +25,11 @@ data class ProviderPreset(
      * 只填官方文档确认过的值,不猜;照服务商写明的顺序。
      */
     val reasoningLevels: List<String> = emptyList(),
+    /**
+     * 官方公开声明过免费调用的模型名(如智谱 GLM-4-Flash):声明了就帮用户预填成手填模型,
+     * 并在表单里给一句免费说明和注册入口。只填官方确认过免费的,不猜。
+     */
+    val defaultModel: String? = null,
 )
 
 object ProviderPresets {
@@ -55,7 +60,8 @@ object ProviderPresets {
         // 这家的 OpenAI 兼容接口上,不少模型(如 qwen3.5 系列)只有显式缓存:不标就从不复用
         ProviderPreset("通义千问", ProviderConfig.Kind.OpenAiCompat, "https://dashscope.aliyuncs.com/compatible-mode/v1", caps(caching = PromptCaching.Explicit), familyTokens = listOf("qwen")),
         ProviderPreset("Kimi", ProviderConfig.Kind.OpenAiCompat, "https://api.moonshot.cn/v1", caps(), familyTokens = listOf("kimi", "moonshot")),
-        ProviderPreset("智谱", ProviderConfig.Kind.OpenAiCompat, "https://open.bigmodel.cn/api/paas/v4", caps(), familyTokens = listOf("glm")),
+        // GLM-4-Flash / 4.7-Flash 官方声明永久免费(不限总量,限 30 并发):免费模型名预填,注册拿 Key 即用
+        ProviderPreset("智谱", ProviderConfig.Kind.OpenAiCompat, "https://open.bigmodel.cn/api/paas/v4", caps(context = 128_000), familyTokens = listOf("glm"), defaultModel = "glm-4-flash"),
         // Coding Plan 的 Key 和标准 API 分开；OpenAI Chat Completion 专用地址见智谱的 Coding Plan 接入指南。
         ProviderPreset("智谱 Coding Plan", ProviderConfig.Kind.OpenAiCompat, "https://open.bigmodel.cn/api/coding/paas/v4", caps(), familyTokens = listOf("glm")),
         // 托管多家开源模型,能不能看图按模型定
