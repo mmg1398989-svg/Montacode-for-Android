@@ -25,7 +25,7 @@ import uuid
 
 VERSION = "0.1.0"
 API = "/api/v1"
-PHONE_FILES = "/sdcard/Android/data/com.staract.assistant/files"
+PHONE_FILES = "/sdcard/Android/data/com.montacode.assistant/files"
 INFO_FILE = PHONE_FILES + "/mcp-usb.json"
 CONNECT_SCRIPT = PHONE_FILES + "/connect-computer.sh"
 MAX_RESPONSE = 4 * 1024 * 1024

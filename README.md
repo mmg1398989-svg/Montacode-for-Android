@@ -1,17 +1,17 @@
 <div align="center">
-<img src="app/src/main/res/drawable-nodpi/staract_logo.png" width="240" alt="STARACT 安徽星执人工智能" />
+<img src="app/src/main/res/drawable-nodpi/montacode_logo.png" width="240" alt="Montacode 空调遥控器" />
 
-# STARACT
+# Montacode
 
-安卓端 AI 助手 · 安徽星执人工智能
+安卓端 AI 助手 · 空调遥控器
 
-**开发人：马明岗**
+**开发人：空调遥控器**
 
 </div>
 
 ## 功能
 
-STARACT 基于 [Mika v0.1.38](https://github.com/wangzan101/Mika/releases/tag/v0.1.38)，沿用其后台屏幕操作、内置浏览器、定时任务和电脑端 CLI / MCP 等功能。聊天、浏览和文件处理需要 Android 11 或更高版本，操作其他手机 App 需要 Android 12 或更高版本并完成手机操作设置。
+Montacode 基于 [Mika v0.1.38](https://github.com/wangzan101/Mika/releases/tag/v0.1.38)，沿用其后台屏幕操作、内置浏览器、定时任务和电脑端 CLI / MCP 等功能。聊天、浏览和文件处理需要 Android 11 或更高版本，操作其他手机 App 需要 Android 12 或更高版本并完成手机操作设置。
 
 ## 从源码构建
 
@@ -21,9 +21,9 @@ STARACT 基于 [Mika v0.1.38](https://github.com/wangzan101/Mika/releases/tag/v0
 ./gradlew :app:testDebugUnitTest :app:assembleDebug
 ```
 
-调试 APK 位于 `app/build/outputs/apk/debug/app-debug.apk`。STARACT 使用独立包名 `com.staract.assistant`，可以与 Mika 分开安装。连接电脑时请使用本仓库的 CLI 脚本 `tools/mika/scripts/mika_cli.py`，USB 模式需要匹配 STARACT 的应用目录。
+调试 APK 位于 `app/build/outputs/apk/debug/app-debug.apk`。Montacode 使用独立包名 `com.montacode.assistant`，可以与 Mika 分开安装。连接电脑时请使用本仓库的 CLI 脚本 `tools/mika/scripts/mika_cli.py`，USB 模式需要匹配 Montacode 的应用目录。
 
-[STARACT 发布页](https://github.com/mmg1398989-svg/STARACT/releases) · [上游使用指南](docs/readme/README.zh-CN.md) · [上游英文文档](README.upstream.md)
+[Montacode 发布页](https://github.com/mmg1398989-svg/GN-Agent-for-Android/releases) · [上游使用指南](docs/readme/README.zh-CN.md) · [上游英文文档](README.upstream.md)
 
 ## 开源署名
 

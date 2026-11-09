@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="wechat_notif_title">WeChat conectado</string>
-    <string name="wechat_notif_body">Mensagens privadas podem iniciar tarefas do STARACT</string>
+    <string name="wechat_notif_body">Mensagens privadas podem iniciar tarefas do Montacode</string>
     <string name="wechat_turn_off">Desativar</string>
     <string name="wechat_title">WeChat</string>
-    <string name="wechat_settings_sub">Atribua tarefas ao STARACT no WeChat</string>
+    <string name="wechat_settings_sub">Atribua tarefas ao Montacode no WeChat</string>
     <string name="wechat_status_disconnected">Não conectado</string>
     <string name="wechat_status_connecting">Conectando</string>
     <string name="wechat_status_connected">Conectado</string>
@@ -13,16 +13,16 @@
     <string name="wechat_status_rebind">Vincule novamente</string>
     <string name="wechat_status_waiting">Aguardando leitura</string>
     <string name="wechat_status_preparing">Preparando</string>
-    <string name="wechat_state_disconnected_detail">Vincule para atribuir tarefas ao STARACT diretamente pelo WeChat</string>
+    <string name="wechat_state_disconnected_detail">Vincule para atribuir tarefas ao Montacode diretamente pelo WeChat</string>
     <string name="wechat_state_connecting_detail">Conectando ao WeChat…</string>
-    <string name="wechat_state_connected_detail">Conversas privadas do WeChat já podem atribuir tarefas ao STARACT</string>
+    <string name="wechat_state_connected_detail">Conversas privadas do WeChat já podem atribuir tarefas ao Montacode</string>
     <string name="wechat_state_paused_detail">Novas mensagens do WeChat estão pausadas; as tarefas atuais continuam</string>
-    <string name="wechat_state_failed_detail">Não é possível receber novas mensagens; o STARACT tentará novamente automaticamente</string>
+    <string name="wechat_state_failed_detail">Não é possível receber novas mensagens; o Montacode tentará novamente automaticamente</string>
     <string name="wechat_state_rebind_detail">Este login não é mais válido. Leia um novo código QR para reconectar</string>
     <string name="wechat_state_waiting_detail">Confirme a autorização no WeChat</string>
     <string name="wechat_state_preparing_detail">Solicitando um código QR…</string>
     <string name="wechat_how">Como funciona</string>
-    <string name="wechat_how_body">Envie texto pelo WeChat e o STARACT trabalha neste telefone, depois devolve o resultado. Não precisa de computador nem de outro servidor.</string>
+    <string name="wechat_how_body">Envie texto pelo WeChat e o Montacode trabalha neste telefone, depois devolve o resultado. Não precisa de computador nem de outro servidor.</string>
     <string name="wechat_bind">Ler código QR para vincular</string>
     <string name="wechat_bind_retry">Obter um novo código QR</string>
     <string name="wechat_login_failed">Não foi possível iniciar a vinculação do WeChat. Verifique a rede e tente novamente.</string>
@@ -32,7 +32,7 @@
     <string name="wechat_qr_help">Leia no WeChat e confirme a autorização. Depois, abra a conversa privada do bot e envie texto. Este código QR serve apenas para esta vinculação; não o encaminhe.</string>
     <string name="wechat_connection">Conexão</string>
     <string name="wechat_receive">Receber tarefas do WeChat</string>
-    <string name="wechat_receive_sub">Quando desativado, o STARACT para de ler novas mensagens</string>
+    <string name="wechat_receive_sub">Quando desativado, o Montacode para de ler novas mensagens</string>
     <string name="wechat_bound_account">Conta vinculada</string>
     <string name="wechat_current_account">Usuário atual do WeChat</string>
     <string name="wechat_message_scope">Escopo das mensagens</string>
@@ -40,15 +40,15 @@
     <string name="wechat_rebind">Vincular novamente</string>
     <string name="wechat_unbind">Desvincular</string>
     <string name="wechat_unbind_title">Desvincular o WeChat?</string>
-    <string name="wechat_unbind_body">O STARACT para de receber novas mensagens do WeChat e remove a vinculação salva neste telefone. As tarefas atuais continuam.</string>
+    <string name="wechat_unbind_body">O Montacode para de receber novas mensagens do WeChat e remove a vinculação salva neste telefone. As tarefas atuais continuam.</string>
     <string name="wechat_capabilities">Primeira versão</string>
     <string name="wechat_capability_text">Texto privado e tarefas reais</string>
-    <string name="wechat_capability_replies">Perguntas, resultados e avisos do STARACT</string>
+    <string name="wechat_capability_replies">Perguntas, resultados e avisos do Montacode</string>
     <string name="wechat_capability_phone">Confirmações de pagamento e controle do telefone</string>
     <string name="wechat_capability_phone_sub">Ainda concluídos neste telefone</string>
     <string name="wechat_capability_later">Imagens, voz, arquivos, grupos e várias contas</string>
     <string name="wechat_supported">Compatível</string>
     <string name="wechat_phone_only">Telefone</string>
     <string name="wechat_later">Depois</string>
-    <string name="wechat_footer">O STARACT não tem servidor de retransmissão, mas precisa de internet. As mensagens ainda passam pelo WeChat; os modelos na nuvem usam as configurações de rede atuais. As credenciais do bot são criptografadas com o Android Keystore e ficam somente neste telefone.</string>
+    <string name="wechat_footer">O Montacode não tem servidor de retransmissão, mas precisa de internet. As mensagens ainda passam pelo WeChat; os modelos na nuvem usam as configurações de rede atuais. As credenciais do bot são criptografadas com o Android Keystore e ficam somente neste telefone.</string>
 </resources>

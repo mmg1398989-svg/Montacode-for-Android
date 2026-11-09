@@ -177,8 +177,8 @@ private fun Hero(versionName: String, build: String, beta: Boolean) {
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Image(
-            painterResource(R.drawable.staract_logo), contentDescription = null,
-            Modifier.size(160.dp, 96.dp).clip(RoundedCornerShape(16.dp)).background(Color.White),
+            painterResource(R.drawable.montacode_logo), contentDescription = null,
+            Modifier.size(160.dp, 96.dp).clip(RoundedCornerShape(16.dp)),
         )
         Text(stringResource(R.string.app_name), Modifier.padding(top = 12.dp), style = MikaType.Title, fontWeight = FontWeight.Bold, color = c.ink)
         Text(AboutCopy.TAGLINE, Modifier.padding(top = 4.dp), style = MikaType.Caption, color = c.ink2, textAlign = TextAlign.Center)

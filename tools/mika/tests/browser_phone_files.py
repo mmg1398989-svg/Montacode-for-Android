@@ -21,7 +21,7 @@ from test_mika_desk import SCRIPT, desk
 
 @contextmanager
 def packaged_desk(adb, serial, pkg, script):
-    if pkg == "com.staract.assistant":
+    if pkg == "com.montacode.assistant":
         with desk("--device", serial, script=script) as url:
             yield url
         return
@@ -51,7 +51,7 @@ def run(serial, evidence=None, dev_install=False, script=SCRIPT):
     adb = ["adb", "-s", serial]
     if not serial.startswith("emulator-") or subprocess.check_output(adb + ["shell", "getprop", "ro.kernel.qemu"]).strip() != b"1":
         raise ValueError("Pass a disposable Android emulator serial.")
-    pkg = "com.staract.assistant"
+    pkg = "com.montacode.assistant"
     test = "com.wangzan101.mika.task.RemoteTaskFilesDeviceTest"
     if dev_install:
         pkg += ".dev"

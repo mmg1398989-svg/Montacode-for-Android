@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="notif_channel_prepare">Penyiapan latar belakang</string>
-    <string name="notif_preparing">STARACT sedang bersiap</string>
-    <string name="notif_result_title">Hasil tugas STARACT</string>
+    <string name="notif_preparing">Montacode sedang bersiap</string>
+    <string name="notif_result_title">Hasil tugas Montacode</string>
     <string name="parallel_second_display_failed">Gagal membuat layar virtual kedua, jadi untuk sementara hanya satu tugas yang berjalan sekaligus</string>
     <string name="parallel_needs_14">Menjalankan beberapa tugas sekaligus memerlukan Android 14 atau lebih baru</string>
     <string name="parallel_low_ram">Ponsel ini memorinya kecil, jadi satu tugas berjalan sekaligus</string>
     <string name="skill_suspended">Keterampilan ini belakangan tidak berhasil, jadi dijeda</string>
     <string name="skill_verified">Keterampilan berhasil, kini dipakai secara rutin: %1$s</string>
-    <string name="skill_learned">STARACT mempelajari keterampilan: %1$s</string>
-    <string name="skill_app_draft">STARACT mencatat beberapa fakta tentang %1$s untuk Anda tinjau</string>
-    <string name="skill_app_revised">STARACT merevisi catatannya tentang %1$s untuk Anda tinjau</string>
+    <string name="skill_learned">Montacode mempelajari keterampilan: %1$s</string>
+    <string name="skill_app_draft">Montacode mencatat beberapa fakta tentang %1$s untuk Anda tinjau</string>
+    <string name="skill_app_revised">Montacode merevisi catatannya tentang %1$s untuk Anda tinjau</string>
     <string name="recovered_result">Hasil tugas yang dipulihkan</string>
     <string name="recover_delivery_failed">Tugas terakhir selesai, tetapi notifikasi hasilnya gagal. Periksa obrolan.</string>
     <string name="recover_maybe_delivered">Hasil terakhir mungkin sudah terkirim. Periksa obrolan dulu agar tidak dikerjakan dua kali.</string>
@@ -31,18 +31,18 @@
     <string name="fail_no_web">Web tidak tersedia di perangkat ini, jadi pemeriksaan kondisi tidak bisa dijalankan</string>
     <string name="task_waiting_display">Dalam antrean: dimulai setelah tugas lain selesai</string>
     <string name="task_no_phone_helper">Kontrol ponsel belum siap. Selesaikan “Siapkan kontrol ponsel” di Mika. Tugas web dan berkas tidak terpengaruh.</string>
-    <string name="task_no_a11y">Layanan aksesibilitas STARACT nonaktif. Aktifkan STARACT di Aksesibilitas pada setelan sistem.</string>
-    <string name="task_a11y_not_running">Layanan aksesibilitas STARACT sudah aktif, tetapi Android belum menghubungkannya. Nonaktifkan STARACT lalu aktifkan lagi di Aksesibilitas pada setelan sistem. Jika Android mencegahnya, izinkan dulu setelan dibatasi di info aplikasi Mika.</string>
+    <string name="task_no_a11y">Layanan aksesibilitas Montacode nonaktif. Aktifkan Montacode di Aksesibilitas pada setelan sistem.</string>
+    <string name="task_a11y_not_running">Layanan aksesibilitas Montacode sudah aktif, tetapi Android belum menghubungkannya. Nonaktifkan Montacode lalu aktifkan lagi di Aksesibilitas pada setelan sistem. Jika Android mencegahnya, izinkan dulu setelan dibatasi di info aplikasi Mika.</string>
     <string name="task_error">Galat tugas: %1$s</string>
-    <string name="task_app_blocked">“%1$s” dinonaktifkan, jadi STARACT tidak bisa membaca atau mengoperasikannya. Izinkan di Pengaturan › Akses aplikasi dan coba lagi.</string>
+    <string name="task_app_blocked">“%1$s” dinonaktifkan, jadi Montacode tidak bisa membaca atau mengoperasikannya. Izinkan di Pengaturan › Akses aplikasi dan coba lagi.</string>
     <string name="task_app_this_app">Aplikasi ini</string>
     <string name="task_app_access_unavailable">Pengaturan akses aplikasi tidak bisa dibaca. Reset di Pengaturan › Akses aplikasi dan coba lagi.</string>
-    <string name="task_app_protected">Layar ini harus Anda tangani sendiri; STARACT tidak bisa mengotomatiskannya.</string>
+    <string name="task_app_protected">Layar ini harus Anda tangani sendiri; Montacode tidak bisa mengotomatiskannya.</string>
     <string name="task_app_unverified">Tidak bisa memastikan aplikasi mana yang ada di depan, jadi tidak ada lagi yang dikerjakan. Coba lagi, atau buka dulu aplikasi tujuan.</string>
     <string name="task_condition_interrupted">Pemeriksaan kondisi terhenti</string>
     <string name="task_check_unfinished">Pemeriksaan terjadwal belum selesai: %1$s</string>
     <string name="task_may_make_sound">Aplikasi ini mungkin mengeluarkan suara</string>
-    <string name="task_notif_title">STARACT: %1$s</string>
+    <string name="task_notif_title">Montacode: %1$s</string>
     <plurals name="task_active">
         <item quantity="other">%1$d tugas berjalan</item>
     </plurals>
@@ -63,8 +63,8 @@
     <string name="task_not_done">Tugas belum selesai</string>
     <string name="task_stopped">Tugas dihentikan</string>
     <string name="task_stopped_body">Anda menghentikan tugas ini</string>
-    <string name="gate_user_on_page">Anda sedang memakai halaman, jadi STARACT berhenti sejenak</string>
-    <string name="task_no_phone_helper_usb">Pembantu ponsel berhenti (biasanya setelah ponsel dimulai ulang). Buka STARACT dan jalankan lagi perintah mulai USB; bisa disalin di “Siapkan kontrol ponsel”. Tugas web dan berkas tidak terpengaruh.</string>
+    <string name="gate_user_on_page">Anda sedang memakai halaman, jadi Montacode berhenti sejenak</string>
+    <string name="task_no_phone_helper_usb">Pembantu ponsel berhenti (biasanya setelah ponsel dimulai ulang). Buka Montacode dan jalankan lagi perintah mulai USB; bisa disalin di “Siapkan kontrol ponsel”. Tugas web dan berkas tidak terpengaruh.</string>
     <string name="drawer_screens">Layar latar belakang</string>
     <string name="screens_title">Layar latar belakang</string>
     <string name="screens_empty">Saat ini tidak ada tugas yang berjalan.</string>

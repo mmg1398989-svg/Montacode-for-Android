@@ -18,5 +18,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "STARACT"
+rootProject.name = "Montacode"
 include(":core", ":app")

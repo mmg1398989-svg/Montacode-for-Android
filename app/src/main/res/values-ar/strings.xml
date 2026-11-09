@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="a11y_service_description">يتيح هذا الإذن للنظام لـ STARACT قراءة ما يظهر على أي شاشة والتفاعل معه. لا تستخدم STARACT هذا الإذن إلا على شاشتها الافتراضية لتنفيذ المهام التي تطلبها منها، ولا تعمل على شاشتك الرئيسية إلا عندما تسند إليها مهمة عليها.</string>
+    <string name="a11y_service_description">يتيح هذا الإذن للنظام لـ Montacode قراءة ما يظهر على أي شاشة والتفاعل معه. لا تستخدم Montacode هذا الإذن إلا على شاشتها الافتراضية لتنفيذ المهام التي تطلبها منها، ولا تعمل على شاشتك الرئيسية إلا عندما تسند إليها مهمة عليها.</string>
     <string name="channel_attention">يتطلب انتباهك</string>
     <string name="takeover_title">يتطلب انتباهك</string>
     <string name="takeover_title_reason">يتطلب انتباهك: %1$s</string>
@@ -19,8 +19,8 @@
     <string name="action_skip">تخطي</string>
     <string name="action_cancel_task">إلغاء المهمة</string>
     <string name="input_title">نحتاج إلى إجابتك</string>
-    <string name="no_answer_note">إذا لم تصل إجابة خلال %1$d دقيقة، فستتابع STARACT من دونها.</string>
-    <string name="input_too_late">فات الأوان: تابعت STARACT من دون إجابة بعد %1$d دقيقة.</string>
+    <string name="no_answer_note">إذا لم تصل إجابة خلال %1$d دقيقة، فستتابع Montacode من دونها.</string>
+    <string name="input_too_late">فات الأوان: تابعت Montacode من دون إجابة بعد %1$d دقيقة.</string>
     <string name="action_approve">موافقة</string>
     <string name="action_decline">رفض</string>
     <string name="confirmation_locked_hint">أزل القفل للاطلاع على المستلِم والمحتوى</string>

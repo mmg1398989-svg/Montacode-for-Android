@@ -17,8 +17,8 @@ import com.wangzan101.mika.R
 @Composable
 fun MikaLogo(size: Dp, modifier: Modifier = Modifier, corner: Dp = size * 0.28f) {
     Image(
-        painterResource(R.drawable.staract_logo), contentDescription = null,
-        modifier.size(size).clip(RoundedCornerShape(corner)).background(Color.White),
+        painterResource(R.drawable.montacode_logo), contentDescription = null,
+        modifier.size(size).clip(RoundedCornerShape(corner)),
         contentScale = ContentScale.Crop,
     )
 }

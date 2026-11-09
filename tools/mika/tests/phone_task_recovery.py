@@ -31,7 +31,7 @@ def until(read, seconds=60):
 
 def run(serial):
     adb = ["adb", "-s", serial]
-    package = "com.staract.assistant"
+    package = "com.montacode.assistant"
 
     def shell(*args, check=True):
         return subprocess.run(adb + ["shell", *args], check=check, capture_output=True, text=True, timeout=12)

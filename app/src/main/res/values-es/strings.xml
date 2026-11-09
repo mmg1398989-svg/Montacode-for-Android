@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="a11y_service_description">Este permiso del sistema permite a STARACT leer y manejar lo que hay en cualquier pantalla. STARACT lo usa solo en su propia pantalla virtual para hacer las tareas que le das, y actúa en tu pantalla principal solo cuando le encargas una tarea allí.</string>
+    <string name="a11y_service_description">Este permiso del sistema permite a Montacode leer y manejar lo que hay en cualquier pantalla. Montacode lo usa solo en su propia pantalla virtual para hacer las tareas que le das, y actúa en tu pantalla principal solo cuando le encargas una tarea allí.</string>
     <string name="channel_attention">Te necesita</string>
     <string name="takeover_title">Te necesita</string>
     <string name="takeover_title_reason">Te necesita: %1$s</string>
@@ -19,8 +19,8 @@
     <string name="action_skip">Omitir</string>
     <string name="action_cancel_task">Cancelar tarea</string>
     <string name="input_title">Necesita tu respuesta</string>
-    <string name="no_answer_note">Si no hay respuesta en %1$d min, STARACT continuará sin ella.</string>
-    <string name="input_too_late">Demasiado tarde: pasados %1$d min, STARACT continuó sin respuesta.</string>
+    <string name="no_answer_note">Si no hay respuesta en %1$d min, Montacode continuará sin ella.</string>
+    <string name="input_too_late">Demasiado tarde: pasados %1$d min, Montacode continuó sin respuesta.</string>
     <string name="action_approve">Aprobar</string>
     <string name="action_decline">Rechazar</string>
     <string name="confirmation_locked_hint">Desbloquea para ver el destinatario y el contenido</string>
