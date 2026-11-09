@@ -3,7 +3,7 @@ name: STARACT APK
 on:
   push:
     branches:
-      - staract-v0.1.38
+      - main
     tags:
       - 'v[0-9]*'
 
